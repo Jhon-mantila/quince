@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/simplyCountdown.min.js"></script>
+    <script src="https://kit.fontawesome.com/7fee32ee15.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <header class="comfortaa-uniquifier">
+        <video autoplay muted loop id="videoBackground">
+            <source src="./img/video_escritorio.mp4" type="video/mp4" media="(min-width: 768px)">
+            <source src="./img/video_movil.mp4" type="video/mp4" media="(max-width: 767px)">
+            Tu navegador no soporta video HTML5.
+        </video>
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>MIS XV AÑOS</h1>
+            <p>Daniela</p>
+            <spam>14 DE DICIEMBRE 2024</spam>
+        </div>
+        <a href="#" class="button-down"></a>
+    </header>
+    <main>
+        <section id="familia">
+            <div class="styled-section comfortaa-uniquifier">
+                <div class="content-container">
+                    <div>
+                        <p><strong>Con la bendición de Dios y en compañía de mis padres, familiares y padrinos</strong></p>
+                    </div>
+                    <div>
+                        <p>Mis Padres</p>
+                        <p>Sr. Jhon Edinson Mantilla Ruiz</p>
+                        <p>Sra. Jessika Karime Vallejo Velasquez</p>
+                    </div>
+                    <div>
+                        <p>Mis Padrinos</p>
+                        <p>Sr. Cristhian Andres Davila Lozada</p>
+                        <p>Sra. Monica Carolina Mendoza Ruiz</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+
+        <!-- Nueva sección con video en la mitad -->
+        <section class="video-section comfortaa-uniquifier">
+            <h2>Un mensaje especial</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="./img/Mis-quince.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </section>
+
+        
+        <section id="familia">
+            <div class="styled-section">
+                <div class="content-container">
+                    <div class="linea-recepcion lobster-regular">
+                        <p style="font-size: 40px;">Recepción</p>
+                    </div>
+                    <div class="comfortaa-uniquifier">
+                        <p>Frente al parque Camilo Torres</p>
+                        <p>Cl. 52a #N° 25 - 39</p>
+                        <p>Barrancabermeja, Santander</p>
+                        <a href="https://www.google.com/maps/place/Dorynel/@7.0619769,-73.8537646,15z/data=!4m2!3m1!1s0x0:0xa9205d24883252eb?sa=X&ved=1t:2428&ictx=111" class="button" target="_blank">Ver mapa aquí</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- Nueva sección cuenta regresiva -->
+        
+        <section class="cuenta-section comfortaa-uniquifier">
+            <div><h2>Faltan</h2></div>
+            <div class="cuenta-regresiva">
+                <div class="simply-countdown"></div>
+                
+            </div>
+            <div> <p>para mis xv años</p></div>
+        </section>
+
+        <!-- Nueva sección Timeline -->
+        <section class="timeline comfortaa-uniquifier">
+            <!-- La línea principal que conectará todos los eventos -->
+            <div class="timeline-line"></div>
+
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <!-- Reemplazar con icono -->
+                    <img src="./img/house.svg" alt="ubicacion" srcset="">
+                    <p>Llegada de invitados 08:00pm.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <!-- Reemplazar con icono -->
+                    <img src="./img/famale-dancer.svg" alt="dancer-vals" srcset="">
+                    <p>Vals.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <!-- Reemplazar con icono -->
+                    <img src="./img/dinner-svgrepo-com.svg" alt="dinner" srcset="">
+                    <p>Cena.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-content">
+                    <!-- Reemplazar con icono -->
+                    <img src="./img/dance-party-party-fun.svg" alt="party-dance" srcset="">
+                    <p>Rumba.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="codigo-vestimenta lobster-regular">
+            <div>
+                <h2>Código de vestimenta</h2>
+                <h3 class="comfortaa-uniquifier">Semi-Formal</h3>
+                <img src="./img/iconodresscode.webp" alt="">
+            </div>
+        </section>
+
+        <section class="codigo-vestimenta lobster-regular">
+            <div>
+                <h2>Confirmar asistencia</h2>
+            </div>
+        </section>
+
+        <!-- Aquí agregamos el audio que se reproducirá automáticamente -->
+        <audio id="background-music" loop>
+            <source src="./img/Chayanne_-_Tiempo_De_Vals_Album_Version_(Hydr0.org).mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        <!-- Botón para activar el sonido -->
+        <button id="play-music">Activar Música</button>
+
+        <section class="comfortaa-uniquifier" style="text-align: center;">
+            <div>
+                <p>Copyright 2024 | Diseño de Invitación Digital para: Daniela Mantilla</p>
+            </div>
+        </section>
+     
+    </main>
+    <script>
+        const audio = document.getElementById('background-music');
+        const playButton = document.getElementById('play-music');
+
+        // Activa el audio cuando el usuario interactúa con la página
+        playButton.addEventListener('click', function() {
+            audio.play()
+                .then(() => {
+                    playButton.style.display = 'none';  // Esconde el botón después de reproducir la música
+                })
+                .catch(error => {
+                    console.error("La reproducción de audio falló: ", error);
+                });
+        });
+
+        // Alternativa: si el usuario se desplaza, activa el sonido
+        window.addEventListener('scroll', function() {
+            audio.play()
+                .then(() => {
+                    playButton.style.display = 'none';  // Esconde el botón después de reproducir la música
+                })
+                .catch(error => {
+                    console.error("La reproducción de audio falló: ", error);
+                });
+        });
+    </script>
+    <script src="./js/timeline.js"></script>
+    <script src="./js/button-down.js"></script>
+    <script src="./js/cuenta-regresiva.js"></script>
+</body>
+</html>
