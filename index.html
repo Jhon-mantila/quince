@@ -137,6 +137,17 @@
             <div>
                 <h2>Confirmar asistencia</h2>
             </div>
+            <div>
+                <label for="codigo-invitado" style="font-size: 24px;">Ingrese el código del evento:</label>
+                <input type="text" id="codigo-invitado" />
+                <button class="button" id="cargar-invitados">Cargar Invitados</button>
+            </div>
+            <div id="invitados-container" class="comfortaa-uniquifier">
+                <!-- Los invitados se cargarán aquí -->
+            </div>
+            <center>
+            <button class="button" id="confirmar-asistencia" style="display: none;">Confirmar Asistencia</button>
+            </center>
         </section>
 
         <!-- Aquí agregamos el audio que se reproducirá automáticamente -->
@@ -180,6 +191,7 @@
                 });
         });
     </script>
+     <script src="./js/apis.js"></script>
     <script src="./js/timeline.js"></script>
     <script src="./js/button-down.js"></script>
     <script src="./js/cuenta-regresiva.js"></script>
